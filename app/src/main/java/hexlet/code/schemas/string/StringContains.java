@@ -2,9 +2,9 @@ package hexlet.code.schemas.string;
 
 import hexlet.code.schemas.Check;
 
-public class StringSchemaContains implements Check {
+public class StringContains implements Check {
     private final String substring;
-    public StringSchemaContains(String substring) {
+    public StringContains(String substring) {
         this.substring = substring;
     }
     @Override

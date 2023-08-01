@@ -2,7 +2,7 @@ package hexlet.code.schemas.string;
 
 import hexlet.code.schemas.Check;
 
-public class StringSchemaRequired implements Check {
+public class StringRequired implements Check {
 
     @Override
     public boolean check(Object value) {

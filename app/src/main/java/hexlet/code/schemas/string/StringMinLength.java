@@ -2,9 +2,9 @@ package hexlet.code.schemas.string;
 
 import hexlet.code.schemas.Check;
 
-public class StringSchemaMinLength implements Check {
+public class StringMinLength implements Check {
     private final int length;
-    public StringSchemaMinLength(int length) {
+    public StringMinLength(int length) {
         this.length = length;
     }
     @Override
