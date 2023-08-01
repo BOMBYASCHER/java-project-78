@@ -11,6 +11,9 @@ public class MapSizeOf implements Check {
     }
     @Override
     public boolean check(Object value) {
+        if (value == null) {
+            return false;
+        }
         return ((Map<?, ?>) value).size() == size;
     }
 }
