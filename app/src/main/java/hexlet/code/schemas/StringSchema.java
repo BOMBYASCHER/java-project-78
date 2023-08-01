@@ -1,29 +1,21 @@
 package hexlet.code.schemas;
 
-import java.util.HashSet;
-import java.util.Set;
+import hexlet.code.schemas.string.StringSchemaContains;
+import hexlet.code.schemas.string.StringSchemaMinLength;
+import hexlet.code.schemas.string.StringSchemaRequired;
 
-public class StringSchema {
-    private final Set<StringCheck> rules;
-
-    public StringSchema() {
-        rules = new HashSet<>();
-    }
+public class StringSchema extends BaseSchema {
 
     public StringSchema required() {
-        rules.add(new StringSchemaRequired());
+        addRule(new StringSchemaRequired());
         return this;
     }
     public StringSchema minLength(int length) {
-        rules.add(new StringSchemaMinLength(length));
+        addRule(new StringSchemaMinLength(length));
         return this;
     }
     public StringSchema contains(String substring) {
-        rules.add(new StringSchemaContains(substring));
+        addRule(new StringSchemaContains(substring));
         return this;
-    }
-    public boolean isValid(Object value) {
-        return rules.stream()
-                .allMatch(predicate -> predicate.check(value));
     }
 }

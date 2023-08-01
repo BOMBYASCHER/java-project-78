@@ -1,5 +1,5 @@
 package hexlet.code.schemas;
 
-public interface StringCheck {
+public interface Check {
     boolean check(Object value);
 }

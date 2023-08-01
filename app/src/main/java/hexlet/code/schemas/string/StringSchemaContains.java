@@ -1,8 +1,10 @@
-package hexlet.code.schemas;
+package hexlet.code.schemas.string;
 
-public class StringSchemaContains implements StringCheck {
+import hexlet.code.schemas.Check;
+
+public class StringSchemaContains implements Check {
     private final String substring;
-    StringSchemaContains(String substring) {
+    public StringSchemaContains(String substring) {
         this.substring = substring;
     }
     @Override

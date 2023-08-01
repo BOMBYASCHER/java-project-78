@@ -1,8 +1,10 @@
-package hexlet.code.schemas;
+package hexlet.code.schemas.string;
 
-public class StringSchemaMinLength implements StringCheck {
+import hexlet.code.schemas.Check;
+
+public class StringSchemaMinLength implements Check {
     private final int length;
-    StringSchemaMinLength(int length) {
+    public StringSchemaMinLength(int length) {
         this.length = length;
     }
     @Override

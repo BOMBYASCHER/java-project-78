@@ -1,6 +1,8 @@
-package hexlet.code.schemas;
+package hexlet.code.schemas.string;
 
-public class StringSchemaRequired implements StringCheck {
+import hexlet.code.schemas.Check;
+
+public class StringSchemaRequired implements Check {
 
     @Override
     public boolean check(Object value) {
