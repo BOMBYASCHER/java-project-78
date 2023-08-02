@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class BaseSchema {
     private final Set<Check> rules = new HashSet<>();
-    public void addRule(Check rule) {
+    protected void addRule(Check rule) {
         rules.add(rule);
     }
     public boolean isValid(Object value) {
