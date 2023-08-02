@@ -6,7 +6,7 @@ import hexlet.code.schemas.map.MapSizeOf;
 
 import java.util.Map;
 
-public class MapSchema extends BaseSchema {
+public final class MapSchema extends BaseSchema {
     public MapSchema required() {
         addRule(new MapRequired());
         return this;

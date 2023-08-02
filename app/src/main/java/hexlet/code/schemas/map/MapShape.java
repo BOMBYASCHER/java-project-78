@@ -5,11 +5,11 @@ import hexlet.code.schemas.Check;
 
 import java.util.Map;
 
-public class MapShape implements Check {
+public final class MapShape implements Check {
     private final Map<String, BaseSchema> schemas;
 
-    public MapShape(Map<String, BaseSchema> schemas) {
-        this.schemas = schemas;
+    public MapShape(Map<String, BaseSchema> map) {
+        this.schemas = map;
     }
 
     @Override

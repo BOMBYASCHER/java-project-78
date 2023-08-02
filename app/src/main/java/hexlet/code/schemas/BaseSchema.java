@@ -5,10 +5,10 @@ import java.util.Set;
 
 public class BaseSchema {
     private final Set<Check> rules = new HashSet<>();
-    protected void addRule(Check rule) {
+    protected final void addRule(Check rule) {
         rules.add(rule);
     }
-    public boolean isValid(Object value) {
+    public final boolean isValid(Object value) {
         return rules.stream()
                 .allMatch(predicate -> predicate.check(value));
     }

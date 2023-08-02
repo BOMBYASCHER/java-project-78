@@ -30,3 +30,7 @@ jacocoTestReport {
         xml.required = true
     }
 }
+
+checkstyle {
+    toolVersion '10.12.1'
+}

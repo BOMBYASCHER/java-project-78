@@ -2,13 +2,13 @@ package hexlet.code.schemas.string;
 
 import hexlet.code.schemas.Check;
 
-public class StringMinLength implements Check {
-    private final int length;
+public final class StringMinLength implements Check {
+    private final int minLength;
     public StringMinLength(int length) {
-        this.length = length;
+        this.minLength = length;
     }
     @Override
     public boolean check(Object value) {
-        return ((String) value).length() >= length;
+        return ((String) value).length() >= minLength;
     }
 }

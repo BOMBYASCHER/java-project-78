@@ -2,13 +2,13 @@ package hexlet.code.schemas.string;
 
 import hexlet.code.schemas.Check;
 
-public class StringContains implements Check {
-    private final String substring;
+public final class StringContains implements Check {
+    private final String string;
     public StringContains(String substring) {
-        this.substring = substring;
+        this.string = substring;
     }
     @Override
     public boolean check(Object value) {
-        return ((String) value).contains(substring);
+        return ((String) value).contains(string);
     }
 }

@@ -2,7 +2,7 @@ package hexlet.code.schemas.number;
 
 import hexlet.code.schemas.Check;
 
-public class NumberPositive implements Check {
+public final class NumberPositive implements Check {
     @Override
     public boolean check(Object value) {
         if (value == null) {
